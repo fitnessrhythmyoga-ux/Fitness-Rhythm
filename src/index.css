@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Bodoni Moda', Georgia, serif;
+  --font-label: 'Jost', system-ui, sans-serif;
+  --color-ivory: #F3F1EC;
+  --color-ink: #0D0D0D;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F3F1EC;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #F3F1EC;
+  color: #0D0D0D;
+  font-family: 'Jost', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+.font-display {
+  font-family: 'Bodoni Moda', Georgia, serif;
+}
+
+.font-label {
+  font-family: 'Jost', system-ui, sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.15s; }
+.reveal-delay-2 { transition-delay: 0.3s; }
+.reveal-delay-3 { transition-delay: 0.45s; }
+.reveal-delay-4 { transition-delay: 0.6s; }
+
+img {
+  display: block;
+}
