@@ -128,7 +128,7 @@ export default function Reviews() {
 
             <div className="mt-16">
               <a
-                href="https://www.google.com/maps/search/Fitness+%26+Rhythm+Indore"
+                href="https://www.google.com/maps/place/?q=place_id:ChIJVeR7Aa39YjkR65KU2vb9NOE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-label text-[#0D0D0D] text-[0.65rem] tracking-[0.18em] underline underline-offset-4 hover:opacity-40 transition-opacity duration-500"

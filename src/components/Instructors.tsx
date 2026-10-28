@@ -6,16 +6,16 @@ const instructors = [
     expertise: 'Hatha & Vinyasa Yoga',
     experience: '10+ Years',
     philosophy: 'Yoga is not about touching your toes — it is about what you learn on the way down.',
-    image: 'https://images.unsplash.com/photo-1691131120810-661c022502d8?w=600&h=800&fit=crop&auto=format',
-    alt: 'Yoga instructor in contemplative pose, natural light',
+    image: '/images/img_0241.webp',
+    alt: 'Certified Yog Guru Rachana Jain awards and credentials',
   },
   {
     name: 'Wellness Guide',
     expertise: 'Meditation & Breathwork',
     experience: '8+ Years',
     philosophy: 'The breath is your anchor. Every time you return to it, you return to yourself.',
-    image: 'https://images.unsplash.com/photo-1706714134209-bb8e32070586?w=600&h=800&fit=crop&auto=format',
-    alt: 'Instructor in peaceful indoor setting with natural elements',
+    image: '/images/img_0236.webp',
+    alt: 'Fitness & Rhythm dedicated meditation and yoga practice space in Indore',
   },
 ]
 
@@ -44,39 +44,39 @@ export default function Instructors() {
             <Reveal key={instructor.name} delay={(i + 1) as 1 | 2}>
               <div>
                 {/* Portrait */}
-                <div className="overflow-hidden mb-10" style={{ aspectRatio: '3/4' }}>
+                <div className="overflow-hidden mb-10 rounded-2xl border border-white/10" style={{ aspectRatio: '3/4' }}>
                   <img
                     src={instructor.image}
                     alt={instructor.alt}
-                    className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-[1.04]"
-                    style={{ filter: 'grayscale(20%) brightness(0.88)' }}
+                    className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-105"
                   />
                 </div>
 
                 {/* Info */}
-                <div className="flex items-start justify-between mb-5">
-                  <div>
+                <div className="border-t border-[#F3F1EC] border-opacity-15 pt-8">
+                  <div className="flex justify-between items-baseline mb-4">
                     <h3
-                      className="font-display text-[#F3F1EC] mb-1"
-                      style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)' }}
+                      className="font-display text-[#F3F1EC]"
+                      style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2.2rem)' }}
                     >
                       {instructor.name}
                     </h3>
                     <p className="font-label text-[#F3F1EC] opacity-35 text-[0.62rem]">
-                      {instructor.expertise.toUpperCase()}
+                      {instructor.experience}
                     </p>
                   </div>
-                  <p className="font-label text-[#F3F1EC] opacity-30 text-[0.6rem] mt-1">
-                    {instructor.experience.toUpperCase()}
+
+                  <p className="font-label text-[#F3F1EC] opacity-50 text-[0.68rem] tracking-[0.14em] mb-6">
+                    {instructor.expertise.toUpperCase()}
+                  </p>
+
+                  <p
+                    className="font-label text-[#F3F1EC] opacity-35 leading-relaxed"
+                    style={{ fontSize: '0.68rem', letterSpacing: '0.07em' }}
+                  >
+                    "{instructor.philosophy}"
                   </p>
                 </div>
-
-                <p
-                  className="font-display text-[#F3F1EC] opacity-55 italic leading-snug"
-                  style={{ fontSize: 'clamp(1rem, 1.8vw, 1.4rem)' }}
-                >
-                  "{instructor.philosophy}"
-                </p>
               </div>
             </Reveal>
           ))}

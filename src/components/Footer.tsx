@@ -66,13 +66,13 @@ export default function Footer() {
                 079873 49193
               </a>
               <a
-                href="https://maps.google.com/?q=Fitness+Rhythm+Indore"
+                href="https://www.google.com/maps/place/?q=place_id:ChIJVeR7Aa39YjkR65KU2vb9NOE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-label text-[#F3F1EC] opacity-50 text-[0.65rem] tracking-[0.08em] leading-loose hover:opacity-100 transition-opacity duration-400"
               >
-                180, AIRPORT RD,<br />
-                KALANI NAGAR,<br />
+                BHOLENATH COLONY, 180, AIRPORT RD,<br />
+                HUJURGANJ, KALANI NAGAR,<br />
                 INDORE MP 452005
               </a>
             </div>

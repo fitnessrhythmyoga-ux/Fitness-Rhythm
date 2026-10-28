@@ -2,14 +2,14 @@ import { useState } from 'react'
 import Reveal from './Reveal'
 
 const images = [
-  { src: 'https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?w=700&h=900&fit=crop&auto=format', alt: 'Yoga practitioner in seated pose on wooden floor', caption: 'Practice · Studio' },
-  { src: 'https://images.unsplash.com/photo-1572044162257-6d1f66f91140?w=800&h=600&fit=crop&auto=format', alt: 'Woman performing yoga in natural light', caption: 'Movement · Yoga' },
-  { src: 'https://images.unsplash.com/photo-1761971975962-9cc397e2ba2a?w=700&h=500&fit=crop&auto=format', alt: 'Modern yoga studio interior with large windows', caption: 'Our Studio · Space' },
-  { src: 'https://images.unsplash.com/photo-1554244933-d876deb6b2ff?w=600&h=800&fit=crop&auto=format', alt: 'Meditating woman in peaceful environment', caption: 'Meditation · Wellness' },
-  { src: 'https://images.unsplash.com/photo-1761971975724-31001b4de0bf?w=800&h=600&fit=crop&auto=format', alt: 'Minimalist yoga studio with artwork', caption: 'Studio · Interior' },
-  { src: 'https://images.unsplash.com/photo-1768064722888-2136781a4150?w=600&h=900&fit=crop&auto=format', alt: 'Woman in white clothing near window light', caption: 'Calm · Presence' },
-  { src: 'https://images.unsplash.com/photo-1636990628724-cb59f83326d7?w=700&h=1000&fit=crop&auto=format', alt: 'Yoga practice in clean studio space', caption: 'Strength · Form' },
-  { src: 'https://images.unsplash.com/photo-1691131120810-661c022502d8?w=800&h=600&fit=crop&auto=format', alt: 'Practitioner in contemplative moment', caption: 'Awareness · Breath' },
+  { src: '/images/img_0242.webp', alt: 'Fitness & Rhythm yoga studio interior with yoga mats, mirrors and natural light', caption: 'Our Studio · Space' },
+  { src: '/images/img_0245.webp', alt: 'Colourful yoga mats lined along the studio wall in natural light', caption: 'Practice · Mats' },
+  { src: '/images/img_0234.webp', alt: 'Spacious studio practice hall with mirrors and equipment', caption: 'Studio · Practice Hall' },
+  { src: '/images/img_0238.webp', alt: 'Medals and awards earned at Fitness & Rhythm studio', caption: 'Achievements · Dedication' },
+  { src: '/images/img_0231.webp', alt: 'Rolled yoga mats and practice balls neatly arranged along the wall', caption: 'Equipment · Ready' },
+  { src: '/images/img_0246.webp', alt: 'Secondary practice room with Surya Namaskar poster and open floor', caption: 'Surya Namaskar · Room' },
+  { src: '/images/img_0233.webp', alt: 'Full view of the yoga studio from the entrance with gleaming floor', caption: 'Studio · Entrance' },
+  { src: '/images/img_0241.webp', alt: 'Framed certificates and awards displayed at Fitness & Rhythm studio', caption: 'Certified · Excellence' },
 ]
 
 export default function Gallery() {
@@ -88,7 +88,7 @@ export default function Gallery() {
             onClick={e => e.stopPropagation()}
           >
             <img
-              src={images[lightbox].src.replace('w=700', 'w=1400').replace('w=800', 'w=1400').replace('w=600', 'w=1200')}
+              src={images[lightbox].src}
               alt={images[lightbox].alt}
               className="max-w-full max-h-[85vh] object-contain"
             />

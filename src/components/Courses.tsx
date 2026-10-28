@@ -17,54 +17,11 @@ export default function Courses() {
   return (
     <section id="courses" className="bg-[#F3F1EC] py-32 md:py-40">
       <div className="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24">
-        {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 md:mb-28">
-          <div>
-            <Reveal>
-              <p className="font-label text-[#0D0D0D] opacity-50 mb-10">COURSES & PROGRAMS</p>
-            </Reveal>
-            <Reveal delay={1}>
-              <h2
-                className="font-display text-[#0D0D0D] leading-[0.92]"
-                style={{ fontSize: 'clamp(2.8rem, 6vw, 7rem)' }}
-              >
-                Deepen<br />
-                <em>Your Practice.</em>
-              </h2>
-            </Reveal>
-          </div>
-          <div className="flex flex-col justify-end">
-            <Reveal delay={2}>
-              <p
-                className="font-label text-[#0D0D0D] opacity-55 leading-loose"
-                style={{ fontSize: '0.7rem', letterSpacing: '0.09em' }}
-              >
-                STRUCTURED COURSES AND PROGRAMS DESIGNED FOR CONSISTENT TRANSFORMATION. EACH IS BUILT TO TAKE YOU DEEPER — INTO YOUR PRACTICE, YOUR BODY, AND YOUR UNDERSTANDING OF WELLNESS.
-              </p>
-            </Reveal>
-          </div>
-        </div>
-
-        {/* Featured image */}
-        <Reveal>
-          <div className="relative overflow-hidden mb-20 md:mb-28" style={{ height: 'clamp(280px, 45vw, 620px)' }}>
-            <img
-              src="https://images.unsplash.com/photo-1761971975962-9cc397e2ba2a?w=1400&h=700&fit=crop&auto=format"
-              alt="Modern yoga studio with large windows and yoga mats"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-end p-10"
-              style={{ background: 'linear-gradient(to top, rgba(13,13,13,0.5) 0%, transparent 60%)' }}
-            >
-              <p className="font-label text-[#F3F1EC] opacity-70 text-[0.65rem] tracking-[0.18em]">
-                FITNESS & RHYTHM STUDIO — INDORE
-              </p>
-            </div>
-          </div>
-        </Reveal>
-
         {/* Course list */}
-        <div>
+        <div className="mb-20 md:mb-28">
+          <Reveal>
+            <p className="font-label text-[#0D0D0D] opacity-50 mb-10">COURSES & PROGRAMS</p>
+          </Reveal>
           {courses.map((course, i) => (
             <Reveal key={course.title} delay={(i % 3) as 0 | 1 | 2}>
               <div
@@ -99,6 +56,49 @@ export default function Courses() {
           ))}
           <div className="border-t border-[#0D0D0D] border-opacity-10" />
         </div>
+
+        {/* Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 md:mb-28">
+          <div>
+            <Reveal delay={1}>
+              <h2
+                className="font-display text-[#0D0D0D] leading-[0.92]"
+                style={{ fontSize: 'clamp(2.8rem, 6vw, 7rem)' }}
+              >
+                Deepen<br />
+                <em>Your Practice.</em>
+              </h2>
+            </Reveal>
+          </div>
+          <div className="flex flex-col justify-end">
+            <Reveal delay={2}>
+              <p
+                className="font-label text-[#0D0D0D] opacity-55 leading-loose"
+                style={{ fontSize: '0.7rem', letterSpacing: '0.09em' }}
+              >
+                STRUCTURED COURSES AND PROGRAMS DESIGNED FOR CONSISTENT TRANSFORMATION. EACH IS BUILT TO TAKE YOU DEEPER — INTO YOUR PRACTICE, YOUR BODY, AND YOUR UNDERSTANDING OF WELLNESS.
+              </p>
+            </Reveal>
+          </div>
+        </div>
+
+        {/* Featured image */}
+        <Reveal>
+          <div className="relative overflow-hidden" style={{ height: 'clamp(280px, 45vw, 620px)' }}>
+            <img
+              src="/images/img_0234.webp"
+              alt="Fitness & Rhythm spacious yoga studio interior with wooden flooring and practice space"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-end p-10"
+              style={{ background: 'linear-gradient(to top, rgba(13,13,13,0.5) 0%, transparent 60%)' }}
+            >
+              <p className="font-label text-[#F3F1EC] opacity-70 text-[0.65rem] tracking-[0.18em]">
+                FITNESS & RHYTHM STUDIO — INDORE
+              </p>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

@@ -22,8 +22,8 @@ export default function Hero() {
         style={{ height: '120%', top: '-10%' }}
       >
         <img
-          src="https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?w=1920&h=1280&fit=crop&auto=format"
-          alt="Woman performing yoga pose in a serene studio setting"
+          src="/images/img_0230.webp"
+          alt="Fitness & Rhythm Yoga Studio interior with wooden flooring, mirrors, and practice mats in Indore"
           className="w-full h-full object-cover"
           style={{ filter: 'brightness(0.72) contrast(1.04)' }}
         />

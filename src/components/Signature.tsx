@@ -31,8 +31,8 @@ export default function Signature() {
         style={{ height: '120%', top: '-10%' }}
       >
         <img
-          src="https://images.unsplash.com/photo-1780130487332-b6a96a31b024?w=1920&h=1280&fit=crop&auto=format"
-          alt="Person in meditative posture in dramatic light"
+          src="/images/img_0243.webp"
+          alt="Fitness & Rhythm studio yoga floor and peaceful practice atmosphere"
           className="w-full h-full object-cover opacity-35"
         />
       </div>

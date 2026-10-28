@@ -17,10 +17,10 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Courses />
         <About />
         <Classes />
         <Signature />
-        <Courses />
         <Instructors />
         <Reviews />
         <Gallery />
