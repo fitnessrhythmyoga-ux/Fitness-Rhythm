@@ -18,3 +18,8 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
+
+# Root-level raw uploaded camera photos (web-optimized copies reside in public/images)
+/IMG_*.jpeg
+/IMG_*.jpg
+
